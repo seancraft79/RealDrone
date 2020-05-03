@@ -6,9 +6,11 @@ using UnityEngine;
 
 public class GoogleAdsManager : SingletonPattern<GoogleAdsManager>
 {
+    // Admob id
     public const string bannerId = "ca-app-pub-2578695429525909/7490615939";
     public const string interstitialId = "ca-app-pub-2578695429525909/1576137797";
     
+    // Test id
     public const string bannerId_Test = "ca-app-pub-3940256099942544/6300978111";
     public const string interstitialId_Test = "ca-app-pub-3940256099942544/1033173712";
         
@@ -29,9 +31,9 @@ public class GoogleAdsManager : SingletonPattern<GoogleAdsManager>
     public void RequestBanner()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = bannerId;
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = bannerId;
 #else
         string adUnitId = "unexpected_platform";
 #endif
@@ -69,9 +71,9 @@ public class GoogleAdsManager : SingletonPattern<GoogleAdsManager>
     public void RequestInterstitial()
     {
 #if UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitId = interstitialId;
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitId = interstitialId;
 #else
         string adUnitId = "unexpected_platform";
 #endif
