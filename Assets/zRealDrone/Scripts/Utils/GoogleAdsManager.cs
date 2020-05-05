@@ -7,12 +7,12 @@ using UnityEngine;
 public class GoogleAdsManager : SingletonPattern<GoogleAdsManager>
 {
     // ADMOB
-    //public const string bannerId = "ca-app-pub-2578695429525909/7490615939";
-    //public const string interstitialId = "ca-app-pub-2578695429525909/1576137797";
+    public const string bannerId = "ca-app-pub-2578695429525909/7490615939";
+    public const string interstitialId = "ca-app-pub-2578695429525909/1576137797";
     
     // TEST
-    public const string bannerId = "ca-app-pub-3940256099942544/6300978111";
-    public const string interstitialId = "ca-app-pub-3940256099942544/1033173712";
+    //public const string bannerId = "ca-app-pub-3940256099942544/6300978111";
+    //public const string interstitialId = "ca-app-pub-3940256099942544/1033173712";
         
     private BannerView bannerView;
     private InterstitialAd interstitial;
